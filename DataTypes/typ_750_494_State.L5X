@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="20.01" TargetName="typ_750_494_State" TargetType="DataType" ContainsContext="true" Owner="Usuario de Windows" ExportDate="Fri Jun 05 17:11:51 2020" ExportOptions="References DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="Lab5555">
+<DataTypes Use="Context">
+<DataType Use="Target" Name="typ_750_494_State" Family="NoFamily" Class="User">
+<Members>
+<Member Name="ZZZZZZZZZZtyp_750_490" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"/>
+<Member Name="xParameterReadWrite" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="0" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = A read or write operation of module parameters is enabled.]]>
+</Description>
+</Member>
+<Member Name="xGeneralError" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="1" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = There is at least one error in the module.]]>
+</Description>
+</Member>
+<Member Name="xSettlingTimeCollectionActive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="2" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = Transient phase of a collection is enabled.]]>
+</Description>
+</Member>
+<Member Name="xCalibrationActive" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="3" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The module is in calibration mode.]]>
+</Description>
+</Member>
+<Member Name="xModuleError" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="4" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = Group error module.]]>
+</Description>
+</Member>
+<Member Name="xPhase1Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="5" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = Group error phase 1.]]>
+</Description>
+</Member>
+<Member Name="xPhase2Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="6" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = Group error phase 2.]]>
+</Description>
+</Member>
+<Member Name="xPhase3Error" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_490" BitNumber="7" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = Group error phase 3.]]>
+</Description>
+</Member>
+<Member Name="ZZZZZZZZZZtyp_750_499" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"/>
+<Member Name="xPhase1_UnderVoltageUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="0" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for undervoltage Phase L1 is underrange.]]>
+</Description>
+</Member>
+<Member Name="xPhase1_OverVoltageUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="1" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for overvoltage Phase L1 is overrange.]]>
+</Description>
+</Member>
+<Member Name="xPhase1_OverCurrentUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="2" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for overcurrent Phase L1 is overrange.]]>
+</Description>
+</Member>
+<Member Name="xPhase1_UnderVoltageSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="3" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold for undervoltage Phase L1 is underrange.
+The system-internal threshold corresponds to a sinusoidal voltage with an RMS of 45 V.]]>
+</Description>
+</Member>
+<Member Name="xPhase1_OverVoltageSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="4" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold set for overvoltage Phase L1 is overrange.
+The system-internal threshold is at a peak value of 536 V.]]>
+</Description>
+</Member>
+<Member Name="xPhase1_OverCurrentSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="5" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold set for overcurrent Phase L1 is overrange.
+The system-internal threshold is at a peak value of 2.84 A (1 A variant) / 12.5 A (5A variant).]]>
+</Description>
+</Member>
+<Member Name="xPhase1_NoZeroCrossing" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="6" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = No grid zero crossings for Phase L1 detected.]]>
+</Description>
+</Member>
+<Member Name="xPhase2_UnderVoltageUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_499" BitNumber="7" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for undervoltage Phase L2 is underrange.]]>
+</Description>
+</Member>
+<Member Name="ZZZZZZZZZZtyp_750_4918" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"/>
+<Member Name="xPhase2_OverVoltageUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="0" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for overvoltage Phase L2 is overrange.]]>
+</Description>
+</Member>
+<Member Name="xPhase2_OverCurrentUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="1" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for overcurrent Phase L2 is overrange.]]>
+</Description>
+</Member>
+<Member Name="xPhase2_UnderVoltageSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="2" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold for undervoltage Phase L2 is underrange.
+The system-internal threshold corresponds to a sinusoidal voltage with an RMS of 45 V.]]>
+</Description>
+</Member>
+<Member Name="xPhase2_OverVoltageSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="3" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold set for overvoltage Phase L2 is overrange.
+The system-internal threshold is at a peak value of 536 V.]]>
+</Description>
+</Member>
+<Member Name="xPhase2_OverCurrentSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="4" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold set for overcurrent Phase L2 is overrange.
+The system-internal threshold is at a peak value of 2.84 A (1 A variant) / 12.5 A (5A variant).]]>
+</Description>
+</Member>
+<Member Name="xPhase2_NoZeroCrossing" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="5" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = No grid zero crossings for Phase L2 detected.]]>
+</Description>
+</Member>
+<Member Name="xPhase3_UnderVoltageUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="6" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for undervoltage Phase L3 is underrange.]]>
+</Description>
+</Member>
+<Member Name="xPhase3_OverVoltageUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4918" BitNumber="7" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for overvoltage Phase L3 is overrange.]]>
+</Description>
+</Member>
+<Member Name="ZZZZZZZZZZtyp_750_4927" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write"/>
+<Member Name="xPhase3_OverCurrentUser" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4927" BitNumber="0" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The threshold set by the user for overcurrent Phase L3 is overrange]]>
+</Description>
+</Member>
+<Member Name="xPhase3_UnderVoltageSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4927" BitNumber="1" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold for undervoltage Phase L3 is underrange.
+The system-internal threshold corresponds to a sinusoidal voltage with an RMS of 45 V.]]>
+</Description>
+</Member>
+<Member Name="xPhase3_OverVoltageSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4927" BitNumber="2" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold set for overvoltage Phase L3 is overrange.
+The system-internal threshold is at a peak value of 536 V.]]>
+</Description>
+</Member>
+<Member Name="xPhase3_OverCurrentSystem" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4927" BitNumber="3" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The system-internal threshold set for overcurrent Phase L3 is overrange.
+The system-internal threshold is at a peak value of 2.84 A (1 A variant) / 12.5 A (5A variant).]]>
+</Description>
+</Member>
+<Member Name="xPhase3_NoZeroCrossing" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4927" BitNumber="4" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = No grid zero crossings for Phase L3 detected.]]>
+</Description>
+</Member>
+<Member Name="xModule_RotatingField" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZtyp_750_4927" BitNumber="5" ExternalAccess="Read/Write">
+<Description>
+<![CDATA[TRUE = The phasing does not correspond to the order L1-L2-L3.]]>
+</Description>
+</Member>
+</Members>
+</DataType>
+</DataTypes>
+</Controller>
+</RSLogix5000Content>
